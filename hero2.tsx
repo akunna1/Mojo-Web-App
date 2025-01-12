@@ -19,7 +19,8 @@ const Hero2 = () => {
         <div className="lg:w-1/2 pt-4 lg:pt-0">
           <h3 className="text-2xl font-bold text-[#293040]">About Me</h3>
           <p className="mt-4 text-lg text-[#6c757d]">
-          I am Mojo Jojo. I have many talents, one of them being your trusted sidekick. My mission? To keep you motivated and focused every single day. First things first, I’d like to check in with you! How are you feeling today, darling? Now, let’s set the tone for the week ahead with your goal. With a sprinkle of motivation, I’m here to remind you of your strength and to suggest resources (e.g., books, videos, music, etc.) to keep your mind sharp and your spirits high. Let’s show this week who’s boss!          </p>
+            I am Mojo Jojo, your loyal sidekick with many talents, and today my mission is to keep you on track and pumped up every single day. First, I want you to select how you're feeling. Once you've done that, I’ll provide your personalized self-help resources: books, videos, music, and more to help you stay focused, energized, and inspired. My goal? To turn your negative emotions into positives and ensure your positives stay strong. Whether you're feeling motivated, stressed, or anything in between, I’m here to remind you of your strength and offer the perfect tools to lift your spirits. Let’s crush this week together!          
+          </p>
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Fun Fact Section */}

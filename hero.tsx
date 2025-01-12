@@ -7,7 +7,7 @@ const Hero = () => {
         Hi, I am Mojo &#x1F44B;
       </h1>
       <h2 className="text-xl sm:text-2xl text-[#444444] mb-8 max-w-xl mx-auto">
-        I was created to serve you, Lady Akunna, by assisting on your mental health goals.
+        I was created by Lady Akunna to serve as a mental health goals assistant
       </h2>
 
       {/* Scroll Down Indicator */}
