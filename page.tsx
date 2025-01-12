@@ -1,14 +1,12 @@
 // src/app/page.tsx
 import Head from "next/head";
-import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Hero2 from "./components/hero2";
 import Hero3 from "./components/hero3";
-import Footer from "./components/footer";
 
 export const metadata = {
   title: "Helper Mojo",
-  description: "Created by Akunna Onyekachi",
+  description: "Homepage",
 };
 
 export default function Home() {
@@ -17,14 +15,11 @@ export default function Home() {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-
-      <Navbar />
       <Hero />
       <Hero2 />
       <Hero3 />
-      <Footer />
     </>
   );
 }
