@@ -7,7 +7,7 @@ Full stack development project for Mojo web app, my robot mental health assistan
 
 #### Structure
 - public
-- src/app --> layout.tsx (globals.css added here), page.tsx (homepage)
+- src/app --> layout.tsx (globals.css, navbar, footer added here), page.tsx (homepage)
 - src/app/resources --> page.tsx (resources page)
 - src/app/components --> navbar.tsx, footer.tsx, hero.tsx, hero2.tsx
 - src/app/style --> globals.css
@@ -16,9 +16,7 @@ Full stack development project for Mojo web app, my robot mental health assistan
 #### Adding Firebase Authentication
 - Install Firebase SDK (using npm install firebase)
 - Create Firebase Configuration (config.ts)
-- Create Firebase Authentication Helper (auth.ts)
-- Modify Navbar (login button changes to logout button once logged in to resources page. Once logged out, user it taken back to homepage)
-- Modify Resources page (only logged in users can access it)
+
 
 #### Firebase tools
 - **GoogleAuthProvider**: It is a Firebase authentication provider used to authenticate users via their Google account.
