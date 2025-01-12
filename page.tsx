@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Hero2 from "./components/hero2";
+import Hero3 from "./components/hero3";
 import Footer from "./components/footer";
 
 export const metadata = {
@@ -22,6 +23,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Hero2 />
+      <Hero3 />
       <Footer />
     </>
   );
