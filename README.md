@@ -7,11 +7,11 @@ Full stack development project for Mojo web app, my robot mental health assistan
 
 #### Structure
 - public
-- src/app --> layout.tsx (globals.css,components and metadata here), page.tsx (homepage)
-- src/app/resources --> page.tsx (resources page), layout.tsx(metadata and components added here)
+- src/app --> layout.tsx (globals.css added here), page.tsx (homepage)
+- src/app/resources --> page.tsx (resources page)
 - src/app/components --> navbar.tsx, footer.tsx, hero.tsx, hero2.tsx
 - src/app/style --> globals.css
-- src/app/firebase --> config.ts, auth.ts
+- src/app/firebase --> config.ts
 
 #### Adding Firebase Authentication
 - Install Firebase SDK (using npm install firebase)
