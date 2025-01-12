@@ -7,8 +7,8 @@ Full stack development project for Mojo web app, my robot mental health assistan
 
 #### Structure
 - public
-- src/app --> layout.tsx (globals.css imported here), page.tsx (homepage)
-- src/app/resources --> page.tsx (resources page), layout.tsx(metadata and navbar added here)
+- src/app --> layout.tsx (globals.css,components and metadata here), page.tsx (homepage)
+- src/app/resources --> page.tsx (resources page), layout.tsx(metadata and components added here)
 - src/app/components --> navbar.tsx, footer.tsx, hero.tsx, hero2.tsx
 - src/app/style --> globals.css
 - src/app/firebase --> config.ts, auth.ts
