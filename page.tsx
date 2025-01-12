@@ -1,6 +1,7 @@
 // src/app/resources/page.tsx
 import Head from "next/head";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 export const metadata = {
   title: "Helper Mojo | Resources",
@@ -20,6 +21,7 @@ export default function Resources() {
         <h1 className="text-5xl">Resources Page</h1>
         <p>Here are some resources for Mojo...</p>
       </div>
+      <Footer />
     </>
   );
 }
