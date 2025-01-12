@@ -11,3 +11,4 @@ Full stack development project for Mojo web app, my robot mental health assistan
 - src/app/resources --> page.tsx (resources page)
 - src/app/components --> navbar.tsx, footer.tsx, hero.tsx, hero2.tsx
 - src/app/style --> globals.css
+- src/app/firebase --> config.ts
