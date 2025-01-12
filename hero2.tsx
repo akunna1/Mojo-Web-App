@@ -26,9 +26,9 @@ const Hero2 = () => {
             {/* Fun Fact Section */}
             <div className="bg-[#f8f9fa] p-6 rounded-lg shadow-md">
               <PiNotepad className="text-xl text-[#FFC107]" />
-              <h4 className="mt-2 text-lg font-semibold text-[#293040]">Fun Fact About Reading</h4>
+              <h4 className="mt-2 text-lg font-semibold text-[#293040]">The Power of Writing</h4>
               <p className="text-sm text-[#6c757d] mt-2">
-                Research has shown that reading for just six minutes can reduce stress levels by up to 68%. Now that you are aware of that... can you switch off that TV and pick up a book?!
+              Studies show that writing down goals increases the likelihood of achieving them. It turns abstract ideas into concrete steps, boosts focus, and enhances memory and motivation.
               </p>
             </div>
 
@@ -37,8 +37,8 @@ const Hero2 = () => {
               <HiOutlineCube className="text-xl text-[#FFC107]" />
               <h4 className="mt-2 text-lg font-semibold text-[#293040]">My Phobia</h4>
               <p className="text-sm text-[#6c757d] mt-2">
-                I have a phobia of cubes. Many people have made fun of me because of that. I don't like cubes very much, and I don't like such people either.
-              </p>
+                I have a phobia of cubes. Many people have made fun of me because of that. I don't like cubes very much, and I don't like such people either, especially when they mock me.             
+               </p>
             </div>
           </div>
         </div>
