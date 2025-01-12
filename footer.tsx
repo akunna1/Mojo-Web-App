@@ -11,14 +11,14 @@ const Footer = () => {
           </div>
           <div className="text-center md:text-right">
             <p className="text-sm">
-              Created by{' '}
+              Created by {' '}
               <a 
                 href="https://akunnatechstudio.com/" 
                 className="font-bold hover:text-[#FFC107]" 
                 target="_blank" 
                 rel="noopener noreferrer"
-              >
-                Akunna Tech Studio
+              > 
+                 Akunna Tech Studio
               </a>
             </p>
           </div>
