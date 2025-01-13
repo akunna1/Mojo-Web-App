@@ -4,7 +4,7 @@ Full stack development project for Mojo web app, my robot mental health assistan
 #### Colors
 - yellow: #FFC107
 - navy blue: #293040
-- 
+  
 #### Structure
 - public
 - src/app --> layout.tsx (globals.css, navbar, footer, favicon added here), page.tsx (homepage, other components)
