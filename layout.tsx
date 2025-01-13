@@ -1,4 +1,4 @@
-// src/app/resources/layout.tsx
+ // src/app/resources/layout.tsx
 import { ReactNode } from 'react';
 import Head from 'next/head';
 
