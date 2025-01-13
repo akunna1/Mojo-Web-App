@@ -9,8 +9,19 @@
     font-family: 'Montserrat', sans-serif;
   }
   
-  
-  
+  @keyframes bounceY {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move 10px up */
+    }
+}
+
+.animate-bounce-y {
+    animation: bounceY 2s ease-in-out infinite;
+}
+
   
   
   
