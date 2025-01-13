@@ -18,9 +18,14 @@ Full stack development project for Mojo web app, my robot mental health assistan
 - Create Firebase Configuration (config.ts)
 - update navbar.tsx and resources/page.tsx
 
-#### Adding Firebase Collections
-- update hero4.tsx to include functionality that initializes my collections
-
+### Firestore Stuff
+- **addDoc(collection(db, 'users', userId, 'emotions', selectedEmotion, selectedResource), { content: '' })**: Adds a new resource entry with default content when none exists.  
+- **collection(db, 'users', userId, 'emotions', selectedEmotion, selectedResource)**: References the collection for the selected emotion and resource.  
+- **doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource)**: References the specific document for saving or editing content in the Firestore database.  
+- **getDoc(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource))**: Fetches the existing content for the selected emotion and resource when loading.  
+- **onSnapshot(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource))**: Listens for real-time updates to the selected emotion and resource content.  
+- **setDoc(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource), { content: updatedContent })**: Updates or saves the user-edited content for the selected combination.  
+- **query(collection(db, 'users', userId, 'emotions', selectedEmotion, selectedResource))**: Constructs a query to retrieve all documents matching the selected emotion and resource.  
 
 #### Firebase tools
 - **auth**: Initializes Firebase Authentication to manage user sign-ins
