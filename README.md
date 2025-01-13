@@ -22,3 +22,4 @@ Full stack development project for Mojo web app, my robot mental health assistan
 - **auth**: Initializes Firebase Authentication to manage user sign-ins
 - **GoogleAuthProvider**: Configures Google as an authentication provider for sign-in
 - **signInWithPopup**: Opens a popup window to authenticate the user with a specified provider (e.g., Google)
+- **signOut**: Signs the current user out and clears their session
