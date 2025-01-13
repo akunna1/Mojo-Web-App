@@ -1,5 +1,4 @@
-// src/components/navbar.tsx
-'use client'; // Indicate this is a client component
+'use client';
 
 import { useState, useEffect } from 'react';
 import { auth, GoogleAuthProvider, signInWithPopup, signOut } from '../firebase/config'; // Import Firebase methods

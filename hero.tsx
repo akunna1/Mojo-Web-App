@@ -1,3 +1,4 @@
+'use client';
 // src/components/hero.tsx
 
 const Hero = () => {

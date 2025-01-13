@@ -1,3 +1,5 @@
+'use client';
+
 // src/components/hero2.tsx
 import { PiNotepad } from "react-icons/pi";  // Import PiNotepad icon
 import { HiOutlineCube } from "react-icons/hi";  // Import HiOutlineCube icon
