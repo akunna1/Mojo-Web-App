@@ -3,7 +3,7 @@
 
 const Hero = () => {
   return (
-    <div className="relative bg-[#f8f9fa] p-6 rounded-lg shadow-md text-center py-16 px-4 sm:px-8 md:px-16">
+    <div className="relative bg-[#f8f9fa] p-6 shadow-xl text-center py-16 px-4 sm:px-8 md:px-16">
       <h1 className="text-4xl sm:text-5xl font-bold text-[#444444] mb-4 leading-tight">
         Hi, I am Mojo &#x1F44B;
       </h1>

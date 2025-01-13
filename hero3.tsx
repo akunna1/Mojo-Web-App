@@ -9,7 +9,7 @@ const Hero3 = () => {
             </h1>
 
             {/* Steps Container with animation */}
-            <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 max-w-lg w-full space-y-6 animate-bounce-y">
+            <div className="bg-white shadow-xl rounded-xl p-6 sm:p-8 max-w-lg w-full space-y-6 animate-bounce-y">
                 {/* Step 1 */}
                 <div className="flex items-center space-x-4">
                     <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-semibold">
