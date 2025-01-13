@@ -1,23 +1,28 @@
 // src/app/resources/page.tsx
-import Head from "next/head";
+'use client'; // Indicate this is a client component
 
-export const metadata = {
-  title: "Helper Mojo | Resources",
-  description: "Created by Akunna Onyekachi",
-};
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation'; // Use Next.js navigation
+import { auth } from '../firebase/config'; // Import Firebase auth
 
 export default function Resources() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Check if the user is authenticated
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (!user) {
+        // If the user is not logged in, redirect to the homepage
+        router.push('/');
+      }
+    });
+    return () => unsubscribe(); // Cleanup the listener on unmount
+  }, [router]);
+
   return (
-    <>
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div>
-        <h1 className="text-5xl">Resources Page</h1>
-        <p>Here are some resources for Mojo...</p>
-      </div>
-    </>
+    <div>
+      <h1 className="text-5xl">Resources Page</h1>
+      <p>Here are some resources for Mojo...</p>
+    </div>
   );
 }
