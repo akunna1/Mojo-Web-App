@@ -7,9 +7,9 @@ Full stack development project for Mojo web app, my robot mental health assistan
   
 #### Structure
 - public
-- src/app --> layout.tsx (globals.css, navbar, footer, favicon added here), page.tsx (homepage, other components)
-- src/app/resources --> page.tsx (resources page), layout.tsx (metadata and favicon added here)
-- src/app/components --> navbar.tsx, footer.tsx, hero.tsx, hero2.tsx, hero3.tsx
+- src/app --> layout.tsx (globals.css, navbar, footer, favicon added here), page.tsx (homepage, metadata, other components)
+- src/app/resources --> page.tsx (resources page, 1 component imported here i.e hero4.tsx, contains codes for firebase auth), layout.tsx (metadata and favicon added here)
+- src/app/components --> navbar.tsx (contains code for firebase auth), footer.tsx, hero.tsx, hero2.tsx, hero3.tsx, hero4.tsx (contains codes for firestore)
 - src/app/style --> globals.css
 - src/app/firebase --> config.ts
 
@@ -20,12 +20,9 @@ Full stack development project for Mojo web app, my robot mental health assistan
 
 ### Firestore Stuff
 - **addDoc(collection(db, 'users', userId, 'emotions', selectedEmotion, selectedResource), { content: '' })**: Adds a new resource entry with default content when none exists.  
-- **collection(db, 'users', userId, 'emotions', selectedEmotion, selectedResource)**: References the collection for the selected emotion and resource.  
-- **doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource)**: References the specific document for saving or editing content in the Firestore database.  
-- **getDoc(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource))**: Fetches the existing content for the selected emotion and resource when loading.  
-- **onSnapshot(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource))**: Listens for real-time updates to the selected emotion and resource content.  
-- **setDoc(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource), { content: updatedContent })**: Updates or saves the user-edited content for the selected combination.  
-- **query(collection(db, 'users', userId, 'emotions', selectedEmotion, selectedResource))**: Constructs a query to retrieve all documents matching the selected emotion and resource.  
+- **doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource)**: References the specific document for saving or editing content in the Firestore database  
+- **getDoc(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource))**: Fetches the existing content for the selected emotion and resource when loading  
+- **setDoc(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource), { content: updatedContent })**: Updates or saves the user-edited content for the selected combination
 
 #### Firebase tools
 - **auth**: Initializes Firebase Authentication to manage user sign-ins
