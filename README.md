@@ -16,6 +16,10 @@ Full stack development project for Mojo web app, my robot mental health assistan
 #### Adding Firebase Authentication
 - Install Firebase SDK (using npm install firebase)
 - Create Firebase Configuration (config.ts)
+- update navbar.tsx and resources/page.tsx
+
+#### Adding Firebase Collections
+- update hero4.tsx to include functionality that initializes my collections
 
 
 #### Firebase tools
