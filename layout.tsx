@@ -10,17 +10,16 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />  {/* Favicon */}
+        <meta charSet="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="/favicon.ico"/>
       </head>
       <body>
-        <Navbar />
-        {/* Main content of each page will be inserted here */}
+        <Navbar/>
         <main>
-          {children} {/* Page-specific content will go here */}
+          {children}
         </main>
-        <Footer />
+        <Footer/>
       </body>
     </html>
   );
