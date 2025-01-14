@@ -27,7 +27,7 @@ const Navbar = () => {
       console.log('Logged in as:', loggedInUser.displayName);
       // Redirect to resources page after successful login
       router.push('/resources');
-    } catch (error) {
+    } catch {
     }
     setLoading(false);
   };
@@ -39,7 +39,7 @@ const Navbar = () => {
       console.log('Logged out');
       // Redirect to homepage after logout
       router.push('/');
-    } catch (error) {
+    } catch {
     }
     setLoading(false);
   };

@@ -12,7 +12,6 @@ const Hero4 = () => {
   const [resource, setResource] = useState<string>('');
   const [resourceText, setResourceText] = useState<string>('');
   const [editMode, setEditMode] = useState<boolean>(false);
-  const [error, setError] = useState<string>('');
   const [contentFetched, setContentFetched] = useState<boolean>(false);
 
   const fetchContent = async () => {
@@ -28,7 +27,8 @@ const Hero4 = () => {
         }
         setContentFetched(true);
       } catch (err) {
-        setError('Failed to fetch content from Firestore');
+        // No longer setting error state
+        console.error('Failed to fetch content from Firestore', err);
       }
     }
   };
@@ -39,9 +39,9 @@ const Hero4 = () => {
         const docRef = doc(db, 'emotions', emotion, resource, 'content');
         await setDoc(docRef, { text: resourceText }, { merge: true });
         setEditMode(false);
-        setError('');
       } catch (err) {
-        setError('Failed to save content to Firestore');
+        // No longer setting error state
+        console.error('Failed to save content to Firestore', err);
       }
     }
   };
