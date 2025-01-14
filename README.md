@@ -29,3 +29,12 @@ Full stack development project for Mojo web app, my robot mental health assistan
 - **GoogleAuthProvider**: Configures Google as an authentication provider for sign-in
 - **signInWithPopup**: Opens a popup window to authenticate the user with a specified provider (e.g., Google)
 - **signOut**: Signs the current user out and clears their session
+
+#### Git commands to add your project to GitHub
+- cd path/to/my/project
+- git init
+- git remote add origin https://github.com/username/mojo-app.git
+- git add .
+- git commit -m "Initial commit"
+- git branch -M main
+- git push -u origin main
