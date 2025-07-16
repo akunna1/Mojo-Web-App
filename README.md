@@ -1,39 +1,117 @@
-#### Complete code not provided...
+# 🤖 Mojo Web App (Upgraded Version)
 
-#### Colors
-- yellow: #FFC107
-- navy blue: #293040
-  
-#### Structure
-- public
-- src/app --> layout.tsx (globals.css, navbar, footer, favicon added here), page.tsx (homepage, metadata, other components)
-- src/app/resources --> page.tsx (resources page, 1 component imported here i.e hero4.tsx, contains codes for firebase auth), layout.tsx (metadata and favicon added here)
-- src/app/components --> navbar.tsx (contains code for firebase auth), footer.tsx, hero.tsx, hero2.tsx, hero3.tsx, hero4.tsx (contains codes for firestore)
-- src/app/style --> globals.css
-- src/app/firebase --> config.ts
+##  About
 
-#### Adding Firebase Authentication
-- Install Firebase SDK (using npm install firebase)
-- Create Firebase Configuration (config.ts)
-- update navbar.tsx and resources/page.tsx
+**Mojo** is a full-stack mental wellness assistant built to offer curated emotional support. Depending on how I’m feeling — whether anxious, overwhelmed, joyful, or anything in between — Mojo responds with thoughtful, customizable resources. This version introduces **user authentication** and **Firestore integration**, allowing each user to securely save and manage their emotional wellness resources.
 
-### Firestore Stuff
-- **addDoc(collection(db, 'users', userId, 'emotions', selectedEmotion, selectedResource), { content: '' })**: Adds a new resource entry with default content when none exists.  
-- **doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource)**: References the specific document for saving or editing content in the Firestore database  
-- **getDoc(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource))**: Fetches the existing content for the selected emotion and resource when loading  
-- **setDoc(doc(db, 'users', userId, 'emotions', selectedEmotion, selectedResource), { content: updatedContent })**: Updates or saves the user-edited content for the selected combination
+🌐 **Live App:** [helpermojo.com](https://www.helpermojo.com/)
 
-#### Firebase tools
-- **auth**: Initializes Firebase Authentication to manage user sign-ins
-- **GoogleAuthProvider**: Configures Google as an authentication provider for sign-in
-- **signInWithPopup**: Opens a popup window to authenticate the user with a specified provider (e.g., Google)
-- **signOut**: Signs the current user out and clears their session
+> #### 🚧 Complete code not provided — only selected files and structure included for demonstration.
 
-#### Git commands to add your project to GitHub
-- cd path/to/my/project
-- git init
-- git remote add origin https://github.com/username/mojo-app.git
-- git add .
-- git commit -m "Initial commit"
-- git branch -M main
-- git push -u origin main
+---
+
+## 🎨 App Colors
+
+* 💛 Yellow: `#FFC107`
+* 💙 Navy Blue: `#293040`
+
+---
+
+## 🗂️ Project Structure
+
+```
+public/
+src/
+  └── app/
+      ├── layout.tsx         # Global layout w/ navbar, footer, favicon
+      ├── page.tsx           # Homepage w/ main metadata and components
+      └── resources/
+          ├── layout.tsx     # Resources page layout + favicon
+          └── page.tsx       # Resources page with Firebase Auth
+      ├── components/
+          ├── navbar.tsx     # Navigation bar with auth logic
+          ├── footer.tsx
+          ├── hero.tsx
+          ├── hero2.tsx
+          ├── hero3.tsx
+          └── hero4.tsx      # Contains Firestore integration
+      ├── firebase/
+          └── config.ts      # Firebase SDK configuration
+      └── style/
+          └── globals.css    # Global styles
+```
+
+---
+
+## 🔐 Firebase Authentication
+
+Authentication is integrated using **Google Sign-In**:
+
+* 🔌 Install Firebase SDK:
+
+  ```bash
+  npm install firebase
+  ```
+
+* 🧩 Configuration:
+
+  * Set up `config.ts` in `src/app/firebase`
+  * Enable Google Sign-In via Firebase Console
+
+* 🔑 Key Firebase Auth Tools:
+
+  * `auth` – initializes Firebase Authentication
+  * `GoogleAuthProvider` – enables Google login
+  * `signInWithPopup()` – signs user in via popup
+  * `signOut()` – logs the user out
+
+Used in:
+
+* `navbar.tsx`
+* `resources/page.tsx`
+
+---
+
+## 🔥 Firestore Database
+
+Mojo now supports saving user-specific wellness content:
+
+* ➕ `addDoc(collection(...))`: Adds a default resource when none exists
+* 📍 `doc(...)`: Points to the exact document path in Firestore
+* 🔍 `getDoc(...)`: Retrieves saved content for a given emotion and resource
+* 💾 `setDoc(...)`: Saves or updates user-edited resource content
+
+Used in:
+
+* `hero4.tsx`
+
+---
+
+## 🧪 Git Commands to Push to GitHub
+
+```bash
+cd path/to/my/project
+git init
+git remote add origin https://github.com/username/mojo-app.git
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin main
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* **Next.js** – framework for building fast, scalable React apps
+* **TypeScript** – for better code safety and maintainability
+* **Tailwind CSS** – utility-first styling for rapid UI development
+* **Firebase Auth** – secure Google sign-in/out
+* **Firestore DB** – real-time database for storing user-generated content
+
+---
+
+## 🧠 Topics
+
+`firebase` • `typescript` • `nextjs` • `web-app` • `full-stack` • `firebase-auth` • `tailwindcss` • `firestore-database`
+
