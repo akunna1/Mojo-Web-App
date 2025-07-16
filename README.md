@@ -6,7 +6,7 @@
 
 🌐 **Live App:** [helpermojo.com](https://www.helpermojo.com/)
 
-> #### 🚧 Complete code not provided — only selected files and structure included for demonstration.
+> #### 🚧 7 branches of codes available!
 
 ---
 
